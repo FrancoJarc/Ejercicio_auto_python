@@ -1,8 +1,8 @@
 from auto import Automovil
 
 class AutomovilVolador(Automovil):
-    def __init__(self, color, marca, aceleracion, velocidad):
-        super().__init__(color, marca, aceleracion, velocidad)
+    def __init__(self, color, marca, aceleracion, velocidad,_año,___modelo):
+        super().__init__(color, marca, aceleracion, velocidad,_año,___modelo)
         self.esta_volando = True
 
 
