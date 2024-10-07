@@ -1,4 +1,6 @@
-class Automovil:
+from vehiculo import Vehiculo
+
+class Automovil(Vehiculo):
     def __init__(self, color, marca,aceleracion,velocidad,_año,__modelo):
         self.color=color
         self.marca=marca
@@ -7,7 +9,6 @@ class Automovil:
         self.ruedas=4
         self._año=_año
         self.__modelo=__modelo
-
 
     def getColor(self):
         return self.color
@@ -56,5 +57,9 @@ class Automovil:
     def acelera(self):
         self.aceleracion=self.aceleracion+1
         self.velocidad=self.velocidad+1
+
+    def datos(self):
+        print(f"Automovil con {self.ruedas}")
+    
 
 
